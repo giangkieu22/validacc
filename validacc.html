@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>validacc</title>
+</head>
+<body>
+<script>
+    let valid;
+    function validacc(str) {
+        valid = /^[a-z0-9_]{6,}$/;
+        if (valid.test(str)) {
+            return ('Tài khoản đã được tạo!');
+        } else {
+            return ('Nick tạo chưa đúng quy định!');
+        }
+    }
+    let x = prompt('Điền tên tài khoản muốn tạo: ')
+    alert(validacc(x));
+</script>
+</body>
+</html>
